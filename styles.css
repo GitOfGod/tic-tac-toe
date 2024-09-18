@@ -1,0 +1,28 @@
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-size: 100px;
+    --mark-size: cal(var(--cell-size)* 0.9);
+}
+
+body {
+    margin: 0;
+}
+
+.board {
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+    height: var(--cell-size);
+    width: var(--cell-size);
+    border: 1px solid black;
+}
